@@ -11,16 +11,23 @@ public class Main {
         System.out.println("ikinci ededi daxil edin");
         int b = scanner.nextInt();
 
-        int result = 0;
+        int result1 = 0;
+        int result2 = 0;
         for (int i = a; i <=b ; i++) {
 
-            result +=i;
+            if (i % 2 == 0) {
+                result1+=i;
+            }else{
+                result2+=i;
+            }
 
-            System.out.println(i + " : ");
+
+
 
         }
 
-        System.out.println(result);
+
+        System.out.println("netice1 : "+result1 + " netice2 : "+result2);
 
 
     }
